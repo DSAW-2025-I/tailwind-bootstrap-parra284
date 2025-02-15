@@ -21,8 +21,12 @@
 
     .card {
       background-color: hsl(244, 38%, 16%);
-      margin: 12%;
-      border-radius: 2%;
+      margin: 10%;
+      border-radius: 1vw;
+    }
+
+    .card-body {
+      padding: 6% 6% 4% 6%;
     }
 
     h1 {
@@ -33,11 +37,16 @@
     h2 {
       font-family: "Inter", serif;
       font-weight: 700;
+      font-size: 25px;
     }
 
     p {
       font-size: 15px;
       font-weight: 400;
+    }
+
+    .stats {
+      margin: 5% 7% 0 0;
     }
 
     span {
@@ -47,11 +56,13 @@
     .main-paragraph {
       color: hsla(0, 0%, 100%, 0.75);
       font-family: "Inter", serif;
+      margin: 10% 10% 10% 0;
     }
 
     .stat-info {
       color: hsla(0, 0%, 100%, 0.6);
       font-family: "Lexend Deca", serif;
+      margin: 10% 10% 0 0;
     }
   </style>
 </head>
@@ -67,18 +78,20 @@
         experience, and overall efficiency.
       </p>
       
-      <div class="w-25 d-inline-block">
+      <div class="stats w-25 d-inline-block">
         <h2 class="text-white">10k+</h2> <p class="stat-info text-uppercase">companies</p>
       </div>
-      <div class="w-25 d-inline-block">
+      <div class="stats w-25 d-inline-block">
         <h2 class="text-white">314</h2> <p class="stat-info text-uppercase">templates</p>
       </div>
-      <div class="w-25 d-inline-block">
+      <div class="stats w-25 d-inline-block text-uppercase">
         <h2 class="text-white">12m+</h2> <p class="stat-info text-uppercase">queries</p>
       </div>
     </div>
 
-    <img src=".\images\image-header-desktop.jpg">
+    <div class="image-container">
+      <img src=".\images\image-header-desktop.jpg">
+    </div>
 
   </div>  
 
