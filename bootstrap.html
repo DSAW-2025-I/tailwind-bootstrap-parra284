@@ -10,35 +10,68 @@
   <title>Bootstrap| Stats preview card component</title>
 
   <style>
-    body {
-      background-color: hsl(233, 47%, 7%);
+    .centered {
       place-items: center;
     }
 
-    .card {
+    .bg-vdark-blue {
+      background-color: hsl(233, 47%, 7%);
+    }
+
+    .bg-dark-des-blue {
       background-color: hsl(244, 38%, 16%);
+    }
+
+    .text-slight-white {
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    .text-slighter-white {
+      color: hsla(0, 0%, 100%, 0.6)
+    }
+
+    .text-soft-violet {
+      color: hsl(277, 64%, 61%);
+    }
+
+    .sm-margin {
       margin: 12%;
-    }  
+    }
+
+    .med-padding {
+      padding: 5%;
+    }
+
+    .slight-rounded {
+      border-radius: 2%;
+    }
   </style>
 </head>
-<body>
-  <div class="card w-75">
+<body class="bg-vdark-blue centered">
+  <div class="card bg-dark-des-blue sm-margin slight-rounded flex-row w-75">
+    <div class="card-body med-padding">
+      <h1 class="text-white">
+        Get <span class="text-soft-violet">insights</span> that help your business grow.
+      </h1>
 
-    <h1>
-      Get <span>insights</span> that help your business grow.
-    </h1>
+      <p class="text-slight-white">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.
+      </p>
+      
+      <div class="w-25 d-inline-block">
+        <h2 class="text-white">10k+</h2> <p class="text-slighter-white">companies</p>
+      </div>
+      <div class="w-25 d-inline-block">
+        <h2 class="text-white">314</h2> <p class="text-slighter-white">templates</p>
+      </div>
+      <div class="w-25 d-inline-block">
+        <h2 class="text-white">12m+</h2> <p class="text-slighter-white">queries</p>
+      </div>
+    </div>
 
-    <p>
-      Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-      experience, and overall efficiency.
-    </p>
-    
-    <h2>10k+</h2> <p>companies</p>
-    <h2>314</h2> <p>templates</p>
-    <h2>12m+</h2> <p>queries</p>
+    <img src=".\images\image-header-desktop.jpg">
 
-    <img src="./images/image-header-desktop.jpg">
-  
   </div>  
 
   <div class="attribution">
