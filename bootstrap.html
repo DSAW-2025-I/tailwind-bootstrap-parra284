@@ -32,17 +32,17 @@
     h1 {
       font-family: "Inter", serif;
       font-weight: 700;
-      font-size: 35px;
+      font-size: 5vh;
     }
 
     h2 {
       font-family: "Inter", serif;
       font-weight: 700;
-      font-size: 25px;
+      font-size: 3vh;
     }
 
     p {
-      font-size: 15px;
+      font-size: 2vh;
       font-weight: 400;
     }
 
@@ -55,9 +55,6 @@
       font-family: "Inter", serif;
     }
 
-    .stats {
-    }
-
     .stat-info {
       color: hsla(0, 0%, 100%, 0.6);
       font-family: "Lexend Deca", serif;
@@ -66,16 +63,65 @@
     img {
       filter: sepia(95%) saturate(390%) brightness(53%) contrast(100%) hue-rotate(230deg) blur(0.05vw);
       border-radius: 0 1vw 1vw 0;
-      flex-basis: 40%;
+    }
+
+    /* RESPONSIVE STYLES */
+    @media (orientation:portrait) {
+
+      .big-container {
+        height: 175% !important;
+      }
+
+      .card {
+        width: 85% !important;
+        height: 80%;
+        border-radius: 1vh;
+        text-align: center;
+      }
+
+      .card-body {
+        height: 70%;
+      }
+
+      .small-container {
+        justify-content: space-between !important;
+      }
+
+      h1 {
+        font-size: 7vw;
+      }
+
+      h2 {
+        font-size: 5vw;
+      }
+
+      p {
+        font-size: 3vw;
+      }
+
+      img {
+        background-image: url(.\images\image-header-mobile.jpg);
+        width: 100%;
+        height: 30%;
+        border-radius: 1vh 1vh 0 0;
+      }
+
+      .stats-container {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5vh;
+      }
+
+
     }
 
   </style>
 </head>
 <body>
-  <div class="d-flex justify-content-center align-items-center h-100">
+  <div class="big-container d-flex justify-content-center align-items-center h-100">
     <div class="card flex-row flex-wrap-reverse w-75">
-      <div class="card-body d-flex justify-content-center align-items-center">
-        <div class="w-75 h-75 d-flex flex-column justify-content-between">
+      <div class="card-body d-flex justify-content-center align-items-center p-0">
+        <div class="small-container w-75 h-75 d-flex flex-column justify-content-around">
           <h1 class="text-white">
             Get <span>insights</span> that help your business grow.
           </h1>
@@ -87,18 +133,18 @@
           
           <div class="stats-container d-flex justify-content-around w-100">
             <div class="stats d-inline-block">
-              <h2 class="text-white">10k+</h2> <p class="stat-info text-uppercase">companies</p>
+              <h2 class="text-white m-0">10k+</h2> <p class="stat-info text-uppercase m-0">companies</p>
             </div>
             <div class="stats d-inline-block">
-              <h2 class="text-white">314</h2> <p class="stat-info text-uppercase">templates</p>
+              <h2 class="text-white m-0">314</h2> <p class="stat-info text-uppercase m-0">templates</p>
             </div>
             <div class="stats d-inline-block text-uppercase">
-              <h2 class="text-white">12m+</h2> <p class="stat-info">queries</p>
+              <h2 class="text-white m-0">12m+</h2> <p class="stat-info m-0">queries</p>
             </div>
           </div>  
         </div>
       </div>
-      <img class="" src=".\images\image-header-desktop.jpg">
+      <img src=".\images\image-header-desktop.jpg">
     </div>
   </div>  
 
