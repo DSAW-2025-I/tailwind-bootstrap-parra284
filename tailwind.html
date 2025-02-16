@@ -5,28 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   
   <title>Tailwind | Stats preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    * {
+      font-family: "Inter", serif;
+    }
+
+    p {
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    .stat-info {
+      font-family: "Lexend Deca", serif;
+      color: hsla(0, 0%, 100%, 0.6);
+    }
+
+    img {
+      filter: sepia(95%) saturate(390%) brightness(53%) contrast(100%) hue-rotate(230deg) blur(0.05vw);
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="bg-[#090B1A] py-12 flex flex-col justify-center items-center">
+  <div class="bg-[#1B1938] rounded-2xl flex flex-col-reverse lg:flex-row w-[90%] lg:w-[75%]">
+    <div class="text-white text-center lg:text-start p-12 flex flex-col justify-between w-[100%]">
+      <h1 class="font-bold">Get <span class="text-[#AA5CDB]">insights</span> that help your business grow.</h1>
 
-  Get insights that help your business grow.
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.</p>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+      <div class="flex flex-col lg:flex-row justify-between">
+        <div>
+          <h2>10k+</h2>
+          <p class="uppercase stat-info">companies</p>
+        </div>
+        <div>
+          <h2>314</h2>
+          <p class="uppercase stat-info">templates</p>
+        </div>
+        <div class="uppercase lg:me-12">
+          <h2>12m+</h2>
+          <p class="stat-info">queries</p>
+        </div>
+      </div>
+    </div>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+    <img src=".\images\image-header-desktop.jpg" class="hidden lg:block rounded-e-2xl w-[100%]">
+    <img src=".\images\image-header-mobile.jpg" class="lg:hidden rounded-t-2xl">
+  </div>
 
   <div class="attribution">
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Alejandro Parra</a>.
   </div>
 </body>
 </html>
