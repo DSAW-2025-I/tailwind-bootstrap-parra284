@@ -55,6 +55,10 @@
       font-family: "Inter", serif;
     }
 
+    .stats-container {
+      gap: 5vw;
+    }
+
     .stat-info {
       color: hsla(0, 0%, 100%, 0.6);
       font-family: "Lexend Deca", serif;
@@ -63,6 +67,7 @@
     img {
       filter: sepia(95%) saturate(390%) brightness(53%) contrast(100%) hue-rotate(230deg) blur(0.05vw);
       border-radius: 0 1vw 1vw 0;
+      width: 50%;
     }
 
     /* RESPONSIVE STYLES */
@@ -102,7 +107,7 @@
       img {
         background-image: url(.\images\image-header-mobile.jpg);
         width: 100%;
-        height: 30%;
+        
         border-radius: 1vh 1vh 0 0;
       }
 
@@ -131,7 +136,7 @@
             experience, and overall efficiency.
           </p>
           
-          <div class="stats-container d-flex justify-content-around w-100">
+          <div class="stats-container d-flex w-100">
             <div class="stats d-inline-block">
               <h2 class="text-white m-0">10k+</h2> <p class="stat-info text-uppercase m-0">companies</p>
             </div>
