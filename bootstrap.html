@@ -5,28 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
   
-  <title>Bootstrap| Stats preview card component</title>
+  <title>Bootstrap | Stats preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    body {
+      background-color: hsl(233, 47%, 7%);
+    }
+
+    .card {
+      background-color: hsl(244, 38%, 16%);
+    }
+
+    img {
+      filter: sepia(95%) saturate(390%) brightness(53%) contrast(100%) hue-rotate(230deg) blur(0.05vw);
+    }
+
+    h1 {
+      font-family: "Inter", serif;
+      font-weight: 700;
+    }
+
+    span {
+      color: hsl(277, 64%, 61%);
+    }
+
+    h2 {
+      font-family: "Inter", serif;
+      font-weight: 700;
+    }
+
+    p {
+      font-weight: 400;
+    }
+
+    .main-paragraph {
+      color: hsla(0, 0%, 100%, 0.75);
+      font-family: "Inter", serif;
+    }
+
+    .stat-info {
+      color: hsla(0, 0%, 100%, 0.6);
+      font-family: "Lexend Deca", serif;
+    }
+
+    @media (max-width: 991px) { /* Below Bootstrap large (lg) breakpoint */
+      .card {
+        width: 90% !important; /* Adjust as needed */
+      }
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="py-5 d-flex flex-column justify-content-center align-items-center">
+  <div class="card border-0 rounded-3 d-flex flex-column-reverse flex-lg-row w-75">
+    <div class="card-body text-center text-lg-start p-5 d-flex flex-column justify-content-between text-white w-100">
+      <h1>Get <span>insights</span> that help your business grow.</h1>
+      <p class="main-paragraph">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.</p>
 
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
+        <div class="d-flex flex-column flex-lg-row justify-content-between">
+          <div>
+            <h2>10k+</h2>
+            <p class="stat-info text-uppercase">companies</p>
+          </div>
+          <div>
+            <h2>314</h2>
+            <p class="stat-info text-uppercase">templates</p>
+          </div>
+          <div class="me-lg-5 text-uppercase">
+            <h2>12m+</h2>
+            <p class="stat-info">queries</p>
+          </div>
+        </div>    
+    </div>
+    <img src=".\images\image-header-desktop.jpg" class="img-fluid d-none d-lg-block rounded-end-3 w-100">
+    <img src=".\images\image-header-mobile.jpg" class="img-fluid card-img-top w-100 d-lg-none rounded-top-3">
+  </div>
 
   <div class="attribution">
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Alejandro Parra</a>.
   </div>
 </body>
 </html>
